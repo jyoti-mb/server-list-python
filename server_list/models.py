@@ -6,7 +6,7 @@ from django.utils import timezone
 
 # Create your models here.
 class Server(models.Model):
-	name = models.CharField(max_length=200)
+	url = models.CharField(max_length=200)
 	details = models.TextField(blank=True)
 	created_at = models.DateTimeField(default=timezone.now)
 	country = models.CharField(max_length=200,blank=True)
