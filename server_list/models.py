@@ -9,6 +9,8 @@ class Server(models.Model):
 	name = models.CharField(max_length=200)
 	details = models.TextField(blank=True)
 	created_at = models.DateTimeField(default=timezone.now)
+	country = models.CharField(max_length=200,blank=True)
+	city = models.CharField(max_length=200,blank=True)
 	# updated_date = models.DateTimeField(blank=True, null=True)
 
 	# def update(self):
